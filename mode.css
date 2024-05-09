@@ -1,0 +1,222 @@
+/* Light mode styles */
+
+/* Background color and text color for dark mode */
+body.dark-mode {
+  background-color: HSL(0, 0%, 75%);
+  color: black !important; /* Text color */
+}
+
+/* Icons and arrows color for dark mode */
+body.dark-mode .icon,
+body.dark-mode .arrow {
+  filter: brightness(0) invert(0);
+}
+
+/* Arrow button color for dark mode */
+body.dark-mode #arrowButton4{
+  filter: brightness(0) invert(0);
+}
+
+/* Text color for specific elements in dark mode */
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode span {
+  color: black !important;
+}
+
+/* Star icon color for dark mode */
+body.dark-mode .star {
+  color: gold !important;
+}
+
+/* Testimonial text background color for dark mode */
+body.dark-mode .testimonial-text{
+  background-color: #020912;
+}
+
+/* Testimonial text and client name color for dark mode */
+body.dark-mode .testimonial,
+body.dark-mode .client-name{
+  color: white !important;
+}
+
+/* Text color for specific sections in dark mode */
+body.dark-mode .section__text,
+body.dark-mode .text-cont-txt,
+body.dark-mode .title,
+body.dark-mode .section__text__p1,
+body.dark-mode .section__text__p2,
+body.dark-mode .container-p1,
+body.dark-mode .container-p2,
+body.dark-mode .footer-p, 
+body.dark-mode .hamburger-nav,
+body.dark-mode .hamburger-menu {
+  color: black !important;
+}
+
+/* Navigation links styling for dark mode */
+body.dark-mode.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+/* Anchor tag styling for dark mode */
+body.dark-mode a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: black;
+}
+
+/* Hover effect for anchor tags in dark mode */
+body.dark-mode a:hover {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #000;
+}
+
+/* Hamburger menu background color for dark mode */
+body.dark-mode #hamburger-nav .spann {
+  background-color: #000 !important; 
+}
+
+/* Hover effect for hamburger menu in dark mode */
+body.dark-mode #hamburger-nav .spann:hover {
+  background-color: #000 !important; 
+}
+
+/* Button color and text color for dark mode */
+body.dark-mode .btn-color-1,
+body.dark-mode .btn-color-2 {
+  background-color: #333; 
+  color: #fff; /* Corrected the comment syntax */
+  border-color: #333; 
+}
+
+/* Hover effect for buttons in dark mode */
+body.dark-mode .btn-color-1:hover,
+body.dark-mode .btn-color-2:hover {
+  background: #fff 1px solid;
+}
+
+/* Button styling for dark mode */
+body.dark-mode .btn-color-2 {
+  border: 1px solid #fff;
+  background-color: #000; 
+}
+
+/* Hover effect for button border color in dark mode */
+body.dark-mode .btn-color-2:hover {
+  border-color: black;
+}
+
+/* See more button background and text color for dark mode */
+body.dark-mode .see-more {
+  background-color: #fff; 
+  color: #000; 
+  border-color: #fff; 
+}
+
+/* Hover effect for see more button in dark mode */
+body.dark-mode .see-more:hover {
+  border-color: #000;
+  background-color: gray; /* Added missing semicolon */
+}
+
+/* Styling for see more button icon in dark mode */
+body.dark-mode .see-more::after {
+  color: #000;
+}
+
+/* Hover effect for see more button icon in dark mode */
+body.dark-mode .see-more:hover::after {
+  transform: translateY(-50%) translateX(3px); 
+}
+
+/* Toggle container styling */
+.toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide input elements for switch */
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Background color for slider in light mode */
+body.light-mode .slider {
+  background-color: #000;
+}
+
+/* Background color for slider before in light mode */
+body.light-mode .slider:before {
+  background-color: #fff; 
+}
+
+/* Slider styling */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+/* Slider before styling */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #000;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Checked state styling for slider */
+input:checked + .slider {
+  background-color: black;
+}
+
+/* Focus styling for slider */
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+/* Checked state styling for slider before */
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Round slider border radius */
+.slider.round {
+  border-radius: 34px;
+}
+
+/* Round slider before border radius */
+.slider.round:before {
+  border-radius: 50%;
+}

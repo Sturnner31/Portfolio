@@ -1,0 +1,686 @@
+/* Button hover effect */
+.btn:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon hover effect */
+.icon:hover{
+  transform: translateY(-3px);
+}  
+
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Reset styles */
+* {
+margin: 0;
+padding: 0;
+}
+
+/* Body styles */
+body {
+font-family: "Poppins", sans-serif;
+background-color: #020912;
+}
+
+/* HTML styles */
+html {
+scroll-behavior: smooth;
+background-color: #020912;
+color: #fff;
+}
+
+/* Paragraph styles */
+p {
+color: #fff;
+font-size: 1.3rem;
+}
+
+/* Transition styles */
+a,
+.btn {
+transition: all 300ms ease;
+}
+
+/* DESKTOP NAVIGATION */
+
+/* Navigation styles */
+nav,
+.nav-links {
+display: flex;
+}
+
+/* Navigation container styles */
+nav {
+justify-content: space-around;
+align-items: center;
+height: 17vh;
+}
+
+/* Navigation links styles */
+.nav-links {
+gap: 2rem;
+list-style: none;
+font-size: 1.5rem;
+}
+
+/* Anchor tag styles */
+a {
+color: #fff;
+text-decoration: none;
+text-decoration-color: white;
+}
+
+/* Anchor tag hover styles */
+a:hover {
+color: #98E8CD;
+text-decoration: underline;
+text-underline-offset: 1rem;
+text-decoration-color: rgb(181, 181, 181);
+}
+
+/* Logo styles */
+.logo {
+font-size: 2rem;
+font-weight: bold;
+}
+
+/* Logo hover styles */
+.logo:hover {
+cursor: pointer;
+}
+
+/* HAMBURGER MENU */
+
+/* Hamburger navigation styles */
+#hamburger-nav {
+display: none;
+}
+
+/* Hamburger menu container styles */
+.hamburger-menu {
+position: relative;
+display: inline-block;
+}
+
+/* Hamburger icon styles */
+.hamburger-icon {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 24px;
+width: 30px;
+cursor: pointer;
+}
+
+/* Hamburger icon span styles */
+.hamburger-icon span {
+width: 100%;
+height: 2px;
+transition: all 0.3s ease-in-out;
+color: #98E8CD;
+}
+
+
+/* Menu links container styles */
+.menu-links {
+position: absolute;
+top: 100%;
+left: 0;
+background-color: hsl(0, 0%, 70%);
+width: fit-content;
+border-radius: 8px;
+max-height: 0;
+overflow: hidden;
+transition: all 0.3s ease-in-out;
+}
+
+/* Menu link styles */
+.menu-links a {
+display: block;
+padding: 8px;
+text-align: center;
+font-size: 1.4rem;
+color: black;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+
+/* Menu link hover styles */
+.menu-links a:hover {
+  text-decoration: underline;
+}
+
+/* Open menu links styles */
+.menu-links.open {
+max-height: 300px;
+}
+
+/* Remove list decoration when menu is open */
+.menu-links.open li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Open hamburger icon styles */
+.hamburger-icon.open span:first-child {
+transform: rotate(45deg) translate(10px, 5px);
+}
+
+/* Open hamburger icon styles */
+.hamburger-icon.open span:nth-child(2) {
+opacity: 0;
+}
+
+/* Open hamburger icon styles */
+.hamburger-icon.open span:last-child {
+transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* SECTIONS */
+
+/* Section styles */
+section {
+  margin:0 10rem;
+  min-height: fit-content;
+  padding-top: 3vh;
+  height: 96vh;
+}
+
+/* PROFILE SECTION */
+
+/* Profile section styles */
+#profile {
+display: flex;
+justify-content: center;
+gap: 5rem;
+height: 80vh;
+}
+
+/* Profile section picture container styles */
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* Profile section text styles */
+.section__text {
+  align-self: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Profile section text paragraph styles */
+.section__text p {
+  font-weight: 800;
+}
+
+/* Profile section text p1 styles */
+.section__text__p1 {
+  text-align: center;
+}
+
+/* Profile picture container image styles */
+.section__pic-container img {
+  border-radius: 50%; 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+/* Section pic container 2 styles */
+.section__pic-container2 {
+  display: flex;
+  height: 70%;
+  width: 100%;
+  margin: auto;
+}
+
+/* Section pic container 2 image styles */
+.section__pic-container2 img { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Section text p2 styles */
+.section__text__p2 {
+font-size: 1.75rem;
+margin-bottom: 1rem;
+typing-animation;
+}
+
+/* Title styles */
+.title {
+font-size: 3rem;
+text-align: center;
+color: #98E8CD;
+margin-bottom: -0.3rem;
+margin-top: 0.5rem; 
+}
+
+/* My name styles */
+#myname{
+  transition: font-family 0.8s ease-out;
+cursor:pointer;
+}
+
+/* My name hover styles */
+#myname:hover {
+font-family: sans-serif;
+}
+
+/* Social media container styles */
+#socials-container {
+display: flex;
+justify-content: center;
+margin-top: 1rem;
+gap: 1rem;
+}
+
+/* ICONS */
+
+/* Icon styles */
+.icon{
+cursor: pointer;
+height: 2rem;
+filter: brightness(0) invert(1);
+}
+
+/* Experience icon styles */
+.e-icon{
+  cursor: pointer;
+height: 2rem;
+}
+
+/* Checkmark icon styles */
+.checkmark{
+  cursor: pointer;
+height: 4rem;
+}
+
+/* Arrow button 4 styles */
+#arrowButton4 {
+  position: fixed;
+  bottom: 8rem;
+  right: 5rem;
+  z-index: 999;
+  cursor: pointer;
+  transform: rotate(180deg); 
+  height:2rem;
+  filter: brightness(0) invert(1);
+}
+
+/* Arrow button 4 hover styles */
+#arrowButton4:hover {
+  transform: translateY(-3px) rotate(180deg); 
+}
+
+/* BUTTONS */
+
+/* Button container styles */
+.btn-container {
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin-top: 1rem;
+}
+
+/* Button styles */
+.btn {
+font-weight: 750;
+transition: all 300ms ease;
+padding: 1rem;
+width: 8rem;
+border-radius: 2rem;
+}
+
+/* Button color 1 styles */
+.btn-color-1,
+.btn-color-2 {
+border: #fff 0.13rem solid;
+background-color: Rgb(113, 128, 150);
+color: white;
+}
+
+/* Button color 1 hover styles */
+.btn-color-1:hover,
+.btn-color-2:hover {
+cursor: pointer;
+}
+
+/* Button color 1 hover styles */
+.btn-color-1,
+.btn-color-2:hover {
+background: rgb(31, 41, 55);
+color: white;
+}
+
+/* Button color 1 hover styles */
+.btn-color-1:hover {
+background: rgb(0, 0, 0);
+}
+
+/* Button color 2 styles */
+.btn-color-2 {
+background: none;
+}
+
+/* Button color 2 hover styles */
+.btn-color-2:hover {
+border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+/* ABOUT SECTION */
+
+/* About section styles */
+#about {
+position: relative;
+height: 95vh;
+}
+
+/* About containers styles */
+.about-containers {
+gap: 2rem;
+margin-bottom: 2rem;
+margin-top: 2rem;
+margin-block-start: auto;
+}
+
+/* About details container styles */
+.about-details-container {
+justify-content: center;
+flex-direction: column;
+}
+
+/* About containers styles */
+.about-containers,
+.about-details-container {
+display: flex;
+}
+
+/* About picture styles */
+.about-pic {
+border-radius: 2rem;
+}
+
+/* Arrow styles */
+.arrow {
+position: absolute;
+right: -5rem;
+bottom: 2.5rem;
+filter: brightness(0) invert(1);
+}
+
+/* Details container styles */
+.details-container {
+padding: 1.5rem;
+flex: 1;
+background: white;
+border-radius: 2rem;
+border: rgb(53, 53, 53) 0.1rem solid;
+border-color: rgb(163, 163, 163);
+text-align: center;
+color: black;
+}
+
+/* Section container styles */
+.section-container {
+  gap: 4rem;
+  display: flex;
+  height: 70%;
+  margin: initial;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+/* Section pic container styles */
+.section__pic-container {
+height: 400px;
+width: 400px;
+margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+/* Experience section styles */
+#experience {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Experience subtitle styles */
+.experience-sub-title {
+color: rgb(85, 85, 85);
+font-weight: 600;
+font-size: 1.75rem;
+margin-bottom: 2rem;
+}
+
+/* Experience details container styles */
+.experience-details-container {
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin-top: 5rem;
+}
+
+/* Article container styles */
+.article-container {
+display: flex;
+text-align: center;
+flex-wrap: wrap;
+flex-direction: row;
+gap: 2.5rem;
+justify-content: space-around;
+}
+
+/* Header 3 and paragraph styles */
+h3, p{
+  color: black;
+}
+
+/* Text container text styles */
+.text-cont-txt{
+  color: white;
+}
+
+/* Article styles */
+article {
+display: flex;
+width: 10rem;
+justify-content: space-around;
+gap: 0.5rem;
+flex-wrap: wrap;
+}
+
+/* Article icon styles */
+article .icon {
+cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+/* Projects section styles */
+#projects {
+position: relative;
+}
+
+/* Color container styles */
+.color-container {
+border-color: rgb(163, 163, 163);
+background: rgb(250, 250, 250);
+}
+
+/* Project image styles */
+.project-img {
+border-radius: 2rem;
+width: 90%;
+height: 90%;
+}
+
+/* Project title styles */
+.project-title {
+margin: 1rem;
+color: black;
+}
+
+/* Project button styles */
+.project-btn {
+color: black;
+border-color: rgb(163, 163, 163);
+}
+
+
+/* TESTIMONIAL */
+
+/* Testimonial styles */
+#testimonial {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 15rem;
+}
+
+/* Testimonial container styles */
+.testimonial-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  width: 90%;
+}
+
+/* Testimonial content styles */
+.testimonial-content {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-around; 
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+/* Testimonial content styles */
+.testimonial-text {
+  margin-bottom: 2rem;
+  width: calc(33.33% - 20px); 
+  margin-right: 20px; 
+  background-color: #98E8CD;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box; 
+  float: left;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Testimonial text hover styles */
+.testimonial-text:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial styles */
+.testimonial {
+  font-size: 1.3rem;
+  color: #000;
+  line-height: 1.55rem;
+}
+
+/* Client information styles */
+.client-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Client logo styles */
+.client-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 100%; 
+}
+
+/* Client rating styles */
+.client-rating {
+  margin-bottom: 1rem;
+}
+
+/* Star styles */
+.star {
+  color: gold;
+  font-size: 1.5rem;
+}
+
+/* Client name styles */
+.client-name {
+  font-weight: bold;
+  
+}
+
+/* CONTACT */
+
+/* Contact section styles */
+#contact {
+display: flex;
+justify-content: flex-end;
+flex-direction: column;
+height: 50vh;
+}
+
+/* Contact information upper container styles */
+.contact-info-upper-container {
+display: flex;
+justify-content: center;
+border-radius: 2rem;
+border: rgb(53, 53, 53) 0.1rem solid;
+border-color: rgb(163, 163, 163);
+background: (250, 250, 250);
+margin: 2rem auto;
+padding: 0.5rem;
+gap: 0.5rem;
+}
+
+/* Contact information container styles */
+.contact-info-container {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+margin: 1rem;
+}
+
+/* Contact information paragraph styles */
+.contact-info-container p {
+font-size: larger;
+}
+
+/* Contact icon styles */
+.contact-icon {
+cursor: default;
+filter: brightness(0) invert(1);
+}
+
+/* Email icon styles */
+.email-icon {
+height: 2.5rem;
+filter: brightness(0) invert(1);
+}
+
+
+/* FOOTER SECTION */
+
+/* Footer section styles */
+footer {
+margin: 0 1rem;
+}
+
+/* Footer paragraph styles */
+footer p {
+text-align: center;
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Welcome to JST Portfolio. Explore my frontend development skills and projects. Contact me for web development services.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/fvicon/favicon_package_v0.16 (3)/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fvicon/favicon_package_v0.16 (3)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fvicon/favicon_package_v0.16 (3)/favicon-16x16.png">
+    <link rel="manifest" href="/fvicon/favicon_package_v0.16 (3)/site.webmanifest">
+    <link rel="mask-icon" href="/fvicon/favicon_package_v0.16 (3)/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JST Portfolio - Frontend Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+    <link rel="stylesheet" href="mode.css" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+    </head>
+  <body>
+
+    <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="modeToggle">
+          <span class="slider round"></span>
+      </div>
+
+    <nav id="desktop-nav">
+      <div class="logo">JST</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonial">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">JST</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span class="spann" style="background-color: white;" onmouseover="this.style.backgroundColor='#98E8CD'" onmouseout="this.style.backgroundColor='white'"></span>
+            <span class="spann" style="background-color: white;" onmouseover="this.style.backgroundColor='#98E8CD'" onmouseout="this.style.backgroundColor='white'"></span>
+            <span class="spann" style="background-color: white;" onmouseover="this.style.backgroundColor='#98E8CD'" onmouseout="this.style.backgroundColor='white'"></span>
+        </div>
+        
+        <div class="menu-links hidden">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#testimonial" onclick="toggleMenu()">Testimonials</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="dancingimg" src="./img/hero1.png" alt="JST profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1" style="font-size:x-large; color:antiquewhite">Hello, I'm</p>
+        <h1 id="myname" class="title">Joshua Orija</h1>
+        <p class="section__text__p2 typing-animation" style="--length: 15; color: antiquewhite;" >Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./img/myresume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+            <a href="https://www.instagram.com/sturnner_31/" target="_blank">
+              <img src="./img/instagram.png" alt="My Instagram profile" class="icon" />
+            </a>
+            <a href="https://github.com/Sturnner31?tab=repositories" target="_blank">
+              <img src="./img/github.png" alt="My Github profile" class="icon" />
+            </a>
+          </div>
+      </div>
+    </section>
+
+
+    <section id="about">
+        <p class="section__text__p1" style="color:white">Get To Know Me</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container2">
+          <img
+            src="./img/aboutme.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./img/experience.png"
+                alt="Experience icon"
+                class="e-icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./img/education.png"
+                alt="Education icon"
+                class="e-icon"
+              />
+              <h3>Education</h3>
+          <p>Computer Science Diploma (ND)</p>
+          <p><b>Coursera:</b> Frontend Development Specialization</p>
+          <p><b>Udemy:</b> Advanced Web Development Course</p>
+          <p><b>Udemy:</b> The Complete Web Developer Course 2.0</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p class="text-cont-txt">
+          As an ND (National Diploma) holder in Computer Science, I have honed my skills through a combination of formal education and self-directed learning. My passion for web development led me to pursue specialized courses on platforms like Coursera, Udemy, and CodePen. These immersive learning experiences equipped me with the latest tools and techniques in frontend development, allowing me to create dynamic and user-friendly websites.
+        </p>
+            </div>
+          </div>
+          <div class="text-container">
+            
+          </div>
+        </div>
+      </div>
+      <img
+      id="arrowButton1"
+        src="./img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1" style="color: white;">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="checkmark"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="checkmark"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="checkmark"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="checkmark"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="checkmark"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="checkmark"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="checkmark"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="checkmark"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="checkmark"
+                />
+                <div>
+                  <h3>TailwindCSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="checkmark"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+      id="arrowButton2"
+        src="./img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1" style="color:white" >Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./img/creative.png"
+                alt="Web Development Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sturnner31?tab=repositories'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn" target="_blank"
+                onclick="location.href='https://harkinwale-motors.vercel.app/'"
+              >
+              Visit
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./img/ecommerce.png"
+                alt="Web Development Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sturnner31?tab=repositories'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sturnner31?tab=repositories'"
+              >
+                Visit
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./img/clonning.png"
+                alt="Web Development Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:https://github.com/Sturnner31?tab=repositories/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Sturnner31?tab=repositories/'"
+              >
+                Visit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+       id="arrowButton3" 
+      src="./img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+      />
+          
+    </section>
+
+    <section id="testimonial" class="testimonial-container">
+        <div class="section__text">
+            <p class="section__text__p1" style="font-weight: lighter; color:white">What People Are Saying</p>
+            <h1 class="title">Testimonials</h1>
+        </div>
+        <div class="testimonial-content">
+            <div class="testimonial-text-container">
+                <div class="testimonial-text">
+                    <p class="testimonial">Working with JST was an absolute pleasure! Their expertise in web development brought our project to life seamlessly. The website they created not only met but exceeded our expectations. We highly recommend JST to anyone looking for a skilled and dedicated web developer.</p>
+                    <div class="client-info">
+                      <img class="client-logo" src="/img/clientlogo.jpg" alt="Client Logo">
+                      <div class="client-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                      <p class="client-name">Michael Sulivan</p>
+                    </div>
+                  </div>
+                  
+                  <div class="testimonial-text">
+                    <p class="testimonial">We couldn't be happier with the website developed by JST. They took the time to understand our vision and translated it into a stunning, user-friendly website. We wholeheartedly recommend JST to anyone seeking top-notch web development services.</p>
+                    <div class="client-info">
+                      <img class="client-logo" src="/img/QSA.png" alt="Client Logo">
+                      <div class="client-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                      <p class="client-name">QSA</p>
+                    </div>
+                  </div>
+                  
+                  <div class="testimonial-text">
+                    <p class="testimonial">JST is a true professional in the field of web development. Their attention to detail and commitment to delivering a high-quality product were remarkable. We're thrilled with the outcome of our collaboration and would not hesitate to engage JST for future projects. Highly recommended.</p>
+                    <div class="client-info">
+                      <img class="client-logo" src="/img/profile-pic.png" alt="Client Logo">
+                      <div class="client-rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                      </div>
+                      <p class="client-name">Dave </p>
+                    </div>
+                  </div>
+                  
+        </div>
+      </section>
+    
+    
+    
+    
+
+    <section id="contact">
+      <p class="section__text__p1" style="color:white">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./img/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Joshsturnner@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./img/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <img
+       id="arrowButton4" 
+      src="./img/arrow.png"
+        alt="Arrow icon"
+        class="icon-arrow"
+      />
+
+    <footer id="footer">
+            <p class="footer-p" style="color:white">Copyright &#169; 2024 JST. All Rights Reserved.</p>
+    </footer>
+
+    `
+    <script src="scripts.js"></script>
+  </body>
+</html>
